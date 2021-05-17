@@ -1,4 +1,6 @@
-import adt.V2OBJ;
+package ecs;
+
+import ecs.adt.V2OBJ;
 
 import java.lang.reflect.ParameterizedType;
 

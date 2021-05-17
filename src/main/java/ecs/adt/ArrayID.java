@@ -1,4 +1,4 @@
-package adt;
+package ecs.adt;
 
 public interface ArrayID {
 

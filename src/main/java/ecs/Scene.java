@@ -1,4 +1,6 @@
-import adt.V2OBJ;
+package ecs;
+
+import ecs.adt.V2OBJ;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -81,7 +83,7 @@ public abstract class Scene extends V2OBJ {
 
         if (!initialized)
 
-            throw new IllegalStateException("Calling end-scene on uninitialized Scene");
+            throw new IllegalStateException("Calling end-scene on uninitialized ecs.Scene");
 
         initialized = false;
 

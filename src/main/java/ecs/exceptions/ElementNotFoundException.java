@@ -1,4 +1,4 @@
-package exceptions;
+package ecs.exceptions;
 
 public class ElementNotFoundException extends RuntimeException{
 

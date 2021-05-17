@@ -1,4 +1,6 @@
-import adt.V2OBJ;
+package ecs;
+
+import ecs.adt.V2OBJ;
 
 import java.util.List;
 
@@ -35,7 +37,7 @@ public abstract class GameObject extends V2OBJ {
 
                     e.printStackTrace();
 
-                    assert false : "Error: (GameObject) Casting component.";
+                    assert false : "Error: (ecs.GameObject) Casting component.";
                 }
             }
         }

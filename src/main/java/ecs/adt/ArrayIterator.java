@@ -1,4 +1,4 @@
-package adt;
+package ecs.adt;
 
 @FunctionalInterface
 public interface ArrayIterator<T extends ArrayID> {

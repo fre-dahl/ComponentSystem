@@ -1,15 +1,17 @@
-import adt.ArrayID;
-import adt.ArrayIterator;
-import exceptions.DuplicateElementException;
-import exceptions.ElementNotFoundException;
-import exceptions.EmptyCollectionException;
+package ecs;
+
+import ecs.adt.ArrayID;
+import ecs.adt.ArrayIterator;
+import ecs.exceptions.DuplicateElementException;
+import ecs.exceptions.ElementNotFoundException;
+import ecs.exceptions.EmptyCollectionException;
 
 @SuppressWarnings("unchecked")
 
 // auto resizable array specifically for O(1) removal
 // requires the generic class to implement ArrayID
 // all V2OBJ implement this functionality:
-// Scene, Component, GameObject, Manager
+// ecs.Scene, ecs.Component, ecs.GameObject, ecs.Manager
 
 public class Array<T extends ArrayID> {
 
@@ -42,9 +44,9 @@ public class Array<T extends ArrayID> {
 
                 if (item.equals(items[item.arrayID()]))
 
-                    throw new DuplicateElementException("Element already in Array");
+                    throw new DuplicateElementException("Element already in ecs.Array");
             }
-            throw new IllegalStateException("Element cannot inhabit more than one Array");
+            throw new IllegalStateException("Element cannot inhabit more than one ecs.Array");
         }
         if (count == items.length)
 
